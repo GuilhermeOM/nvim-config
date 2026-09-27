@@ -12,7 +12,8 @@ return {
             "c_sharp",
             "json",
             "xml",
-            "javascript"
+            "javascript",
+            "yaml"
         })
       end
     }
