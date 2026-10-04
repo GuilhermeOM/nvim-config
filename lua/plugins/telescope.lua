@@ -26,6 +26,8 @@ return {
             vim.keymap.set("n", "<leader>pf", builtin.find_files, { desc = "Fuzzy find files" })
             vim.keymap.set("n", "<leader>ps", builtin.live_grep, { desc = "Fuzzy find string" })
             vim.keymap.set("n", "<leader>pw", builtin.grep_string, { desc = "Fuzzy find current string" })
+
+            vim.keymap.set("n", "<leader>pb", builtin.buffers, { desc = "Fuzzy find buffers" })
         end
     }
 }

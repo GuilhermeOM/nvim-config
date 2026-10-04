@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv'", { desc = "moves lines down in visual selection" })
-vim.keymap.set("v", "R", ":m '<-2<CR>gv=gv'", { desc = "moves lines up in visual selection" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv'", { desc = "moves lines up in visual selection" })
 
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
@@ -53,3 +53,6 @@ vim.keymap.set("n", "<leader>lr", function()
     vim.cmd("lsp restart")
     vim.notify("LSP restarted", vim.log.levels.INFO)
 end, { desc = "Restart LSP" })
+
+-- delete buffer without closing window
+vim.keymap.set("n", "<leader>bd", ":bp|bd #<CR>", { noremap = true, silent = true })
