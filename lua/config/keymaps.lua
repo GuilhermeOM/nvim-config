@@ -25,7 +25,7 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true, desc = "makes file executable" })
 
 -- tab stuff
-vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>")   --open new tab
+vim.keymap.set("n", "<leader>ta", "<cmd>tabnew<CR>")   --open new tab
 vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>") --close current tab
 vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>")     --go to next
 vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>")     --go to pre
